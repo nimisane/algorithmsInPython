@@ -1,3 +1,5 @@
+import time
+now = time.time()
 def egcd(a, b):
 	if a == 0:
 		return (b, 0, 1)
@@ -11,3 +13,6 @@ print("gcd(",a,",",b,")=",gcd)
 print("Extended version:- gcd(a,b) = ax+by")
 print(gcd,"=",a,"(",x,")","+",b,"(",y,")")
 print("x=",x,"y=",y)
+later = time.time()
+difference = (later - now) 
+print("Running Time:",difference)
