@@ -1,7 +1,5 @@
-# a="abcedfg"
-# b="bacg"
-a=""
-b=""
+a="abcedfg"
+b="bacg"
 
 def lcs(xstr, ystr):
     if not xstr or not ystr:
