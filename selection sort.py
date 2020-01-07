@@ -1,0 +1,17 @@
+a=[1,5,3,10,0,7,8]
+print(a)
+n=len(a)
+i=0
+j=i+1
+while(i<=n-2):
+    imin=i
+    j=i+1
+    while(j<=n-1):
+        if(a[j]<a[imin]):
+           imin=j
+        j=j+1
+    t=a[i]
+    a[i]=a[imin]
+    a[imin]=t
+    i=i+1
+print(a)
